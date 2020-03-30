@@ -1,0 +1,39 @@
+inherit_from:
+  - ../.rubocop.yml
+  - .rubocop_todo.yml
+
+require: rubocop-rspec
+
+Metrics/BlockLength:
+  Enabled: false
+Layout/LineLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+RSpec/ExampleLength:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Exclude:
+    - 'acceptance/*'
+    - 'integration/*'
+
+RSpec/NotToNot:
+  EnforcedStyle: to_not
+Style/BlockDelimiters:
+  Exclude:
+    - spec/factories/**/*.rb
+Style/Documentation:
+  Enabled: false
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+Style/SymbolProc:
+  Exclude:
+    - spec/factories/**/*.rb
+# Style/WordArray:
+#   Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+# RSpec/ContextWording:
+#   Exclude:
+#     - spec/support/shared_contexts/rake.rb
