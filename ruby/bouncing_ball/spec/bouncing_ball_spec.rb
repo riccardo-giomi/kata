@@ -1,4 +1,3 @@
-require 'byebug'
 require_relative '../lib/bouncing_ball.rb'
 
 RSpec.describe BouncingBall do
