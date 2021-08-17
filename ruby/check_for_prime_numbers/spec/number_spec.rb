@@ -1,8 +1,5 @@
-#/usr/bin/env ruby
 # rubocop:disable Style/BlockDelimiters
-
-require 'rspec'
-require_relative 'number.rb'
+require_relative '../lib/number.rb'
 
 RSpec.describe Number do
   def should_be_prime(number)

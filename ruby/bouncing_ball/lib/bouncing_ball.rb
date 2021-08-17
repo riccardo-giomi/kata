@@ -1,30 +1,13 @@
 class BouncingBall
-  class << self
-    def call(height, bounce, window)
-      h = height.to_f
-      b = bounce.to_f
-      w = window.to_f
-      return -1 unless valid?(h, b, w)
+  def self.call(height, bounce, window)
+    return -1 unless bounce > 0.00 && bounce < 1.00
+    return -1 if height <= 0 || height < window
 
-      result = 1
-
-      loop do
-        h *= b
-        break if h <= w
-
-        result += 2
-      end
-      result
+    counter = 0
+    while height >= window
+      height *= bounce
+      counter += height > window ? 2 : 1 # bouncing higher of the window means we see it once more on descent
     end
-
-    private
-
-    def valid?(height, bounce, window)
-      return false unless height.positive?
-      return false unless bounce.positive? && bounce < 1.0
-      return false unless window.positive? && window < height
-
-      true
-    end
+    counter
   end
 end
