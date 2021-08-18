@@ -1,1 +1,13 @@
 source 'https://rubygems.org'
+
+git_source(:github) do |repo_name|
+  "https://github.com/#{repo_name}"
+end
+
+gem 'irb'
+
+group :test, :development do
+  gem 'rspec'
+  gem 'rubocop',       require: false
+  gem 'rubocop-rspec', require: false
+end
