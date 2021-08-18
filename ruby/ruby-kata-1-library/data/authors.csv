@@ -1,7 +1,7 @@
 ﻿email;firstname;lastname
-null-walter@echocat.org;Paul;Walter
-null-mueller@echocat.org;Max;Müller
-null-ferdinand@echocat.org;Franz;Ferdinand
-null-gustafsson@echocat.org;Karl;Gustafsson
-null-lieblich@echocat.org;Werner;Lieblich
-null-rabe@echocat.org;Harald;Rabe
+paul-walter@echocat.org;Paul;Walter
+max-mueller@echocat.org;Max;Müller
+franz-ferdinand@echocat.org;Franz;Ferdinand
+karl-gustafsson@echocat.org;Karl;Gustafsson
+werner-lieblich@echocat.org;Werner;Lieblich
+harald-rabe@echocat.org;Harald;Rabe
